@@ -1,0 +1,25 @@
+server:
+  port: 8089
+
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: labeling_platform
+      authentication-database: admin
+      auto-index-creation: true
+  servlet:
+    multipart:
+      max-file-size: 15MB
+      max-request-size: 15MB
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+application:
+  domain: http://localhost:8089
+#  file-dir: D:\Project_KLTN_Nguyen\IMAGE_LOCAL
+  file-dir: /home/hoangdao/.labeling_platform
+
